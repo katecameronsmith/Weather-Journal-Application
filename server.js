@@ -2,9 +2,12 @@
 const projectData = {};
 
 // Express to run server and routes 
+const e = require('express');
 const express = require('express'); 
 
 const app = express();
+
+const port = 8000;
 
 //parse json files coming from client side
 app.use(express.json());
@@ -12,7 +15,7 @@ app.use(express.urlencoded({extended: false}));
 
 app.use(express.static("website"));
 
-const cors = require('cors')
+const cors = require('cors');
 
 
 
